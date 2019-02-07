@@ -9,7 +9,8 @@ public class Player : NetworkBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (!isLocalPlayer ) {
+        // Commenting out because I moved this to the car user control script
+		/*if (!isLocalPlayer ) {
 			return;
 		}
 
@@ -17,7 +18,7 @@ public class Player : NetworkBehaviour {
 		inputValue.y = 0f;
 		inputValue.z = CrossPlatformInputManager.GetAxis ("Vertical");
 
-		transform.Translate (inputValue);
+		transform.Translate (inputValue);*/
 	}
 
 	public override void OnStartLocalPlayer() {
